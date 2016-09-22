@@ -1,6 +1,7 @@
 #include<iostream>
 #include<stdlib.h>
 
+
 using namespace std;
 
 float result(float n1, float n2, int op){
@@ -36,11 +37,23 @@ cout<<"1 - Soma "<<endl;
 cout<<"2 - Subtração "<<endl;
 cout<<"3 - Multiplicação "<<endl;
 cout<<"4 - Divisão "<<endl;
+cout<<"5 - Encerrar o programa "<<endl;
 cin>>opa;
-system("cls");
+
+while(opa > 0 and opa < 5){
 cout<<"Informe número 1 "<<endl;
 cin>>num1;
 cout<<"Informe número 2 "<<endl;
 cin>>num2;
-cout<<"O resultado é = "<<result(num1, num2, opa);
+cout<<"O resultado é = "<<result(num1, num2, opa)<<endl;
+cout<<"Calculadora "<<endl;
+cout<<"Escolha uma operação "<<endl;
+cout<<"1 - Soma "<<endl;
+cout<<"2 - Subtração "<<endl;
+cout<<"3 - Multiplicação "<<endl;
+cout<<"4 - Divisão "<<endl;
+cout<<"5 - Encerrar o programa "<<endl;
+cin>>opa;
+system("cls");
+}
 }
