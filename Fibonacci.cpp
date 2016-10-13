@@ -8,7 +8,7 @@ void Fibonacci(){
  cin>>n;
  cout<<"0 , 1 ";
  for(i = 0; i < n; i++){
-    cout<<i<<", "<<(num+= i);
+    cout<<i<<", "<<(i c+= i);
  }
 }
 
