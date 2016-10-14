@@ -4,10 +4,10 @@
 using namespace std;
 
 
-void Par(int vetor[], int qtdPar){
- int quant = qtdPar;
+void Par(int vetor[]){
+ int quant = 0;
  for(int i = 0; i < 20; i++){
-    cout<<"Informe um valor para o vetor "<<endl;
+    cout<<"Informe um valor para o vetor na posicao "<<(i+1)<<endl;
     cin>>vetor[i];
     if(vetor[i] % 2 == 0){
         quant++;
@@ -17,15 +17,15 @@ void Par(int vetor[], int qtdPar){
  for(int i = 0; i < 20; i++){
     cout<<vetor[i]<<" ";
  }
- cout<<"";
- cout<<"Quantidade de números par = "<<qtdPar;
+ cout<<""<<endl;
+ cout<<"Quantidade de números par = "<<quant;
 }
 
 main(){
 setlocale(LC_ALL,"Portuguese");
 
-int vetor[20], quantidade;
+int vetor[20];
 
-Par(vetor, quantidade);
+Par(vetor);
 
 }
