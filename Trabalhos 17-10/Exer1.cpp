@@ -5,6 +5,7 @@ using namespace std;
 
 void Exercicio1(int num){
     int vetor1[num], vetor2[num];
+
     int qtdVet1 = 0, qtdVet2 = 0, A;
         for(int i = 0; i < num; i++){
         cout<<"Informe o "<<(i+1)<<" valor para o vetor"<<endl;

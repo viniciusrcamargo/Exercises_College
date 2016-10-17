@@ -3,12 +3,17 @@
 using namespace std;
 
 void Fibonacci(){
- int i, num = 1, n;
+ int primeiro = 1, segundo = 1, n, proximo;
  cout<<"Informe um valor n"<<endl;
  cin>>n;
- cout<<"0 , 1 ";
- for(i = 0; i < n; i++){
-    cout<<i<<", "<<(i c+= i);
+
+ cout<<primeiro<<", ";
+ cout<<primeiro<<", ";
+ for(int i = 3; i <= n; i++){
+    proximo = primeiro + segundo;
+    primeiro = segundo;
+    segundo = proximo;
+    cout<<", "<<proximo;
  }
 }
 
