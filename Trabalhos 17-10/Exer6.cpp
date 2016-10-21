@@ -15,10 +15,11 @@ void Vetor(int vetor[]){
         cout<<vetor[i]<<" ";
     }
     cout<<endl;
-    cout<<"Números do vetor ao inverso = ";
+    cout<<"Resultado trocando a primeira posição do vetor pela última = ";
     for(int i = 19; i >= 0; i--){
         cout<<vetor[i]<<" ";
     }
+    cout<<endl;
 }
 
 main(){

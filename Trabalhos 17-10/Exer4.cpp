@@ -9,6 +9,7 @@ void Produto(int F[], int G[]){
         cout<<"Informe um valor o " << (i+1)<<" do primeiro vetor"<<endl;
         cin>>F[i];
     }
+    cout<<endl;
     for(int i = 0; i < 20; i++){
     cout<<"Informe um valor o " << (i+1)<<" do segundo vetor"<<endl;
     cin>>G[i];

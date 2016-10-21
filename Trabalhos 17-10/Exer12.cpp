@@ -10,13 +10,20 @@ void Primo(int K[], int P[]){
     }
 
     cout<<""<<endl;
-    cout<<"Números primos digitados = ";
-    for(int i = 2; i < 15; i++){
-        if(~K[i] % 2 == 0) {
-           P[i] = K[i];
-           cout<<P[i]<<", ";
-        }
+
+    for(int i =0; i < 15; i++){
+            for(int j = 2; j < K[i]; j++){
+                if(K[i] % j != 0){//
+                    P[j] = K[i];
+                }
+            }
+
     }
+    cout<<"Números primos digitados = ";
+    for(int i = 0; i < sizeof(P); i++){
+        cout<<P[i]<<" ";
+    }
+
 
     //return P[15];
 

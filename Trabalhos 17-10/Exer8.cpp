@@ -7,10 +7,10 @@ int VetorNulos(int vetor1[], int vetor2[]){
   int valor;
 
   for(int i = 0; i < 30; i++){
-    cout<<"Informe um valor positivo para a posição "<<(i+1)<<" do vetor"<<endl;
+    cout<<"Informe um valor para a posição "<<(i+1)<<" do vetor"<<endl;
     cin>>valor;
     vetor1[i] = valor;
-    if(valor < 0)
+    if(valor == 0)
         vetor2[i] = 1;
     else
     vetor2[i] = valor;

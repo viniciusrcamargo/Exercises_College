@@ -3,19 +3,21 @@
 
 using namespace std;
 
-void Exercicio1(int num){
-    int vetor1[num], vetor2[num];
+void Exercicio1(int num, int vetor1[], int vetor2[]){
 
-    int qtdVet1 = 0, qtdVet2 = 0, A;
+    int qtdVet1 = 0, qtdVet2 = 0, entrada;
+
         for(int i = 0; i < num; i++){
         cout<<"Informe o "<<(i+1)<<" valor para o vetor"<<endl;
-        cin>>A;
-        if(A % 2 == 0){
-            vetor1[i] = A;
+        cin>>entrada;
+        fflush(stdin);
+        if(entrada % 2 == 0){
+            vetor1[i] = entrada;
             qtdVet1++;
         }
-        if(A % 2 != 0){
-        vetor2[i] = A;
+        //if(A % 2 != 0){
+        else{
+        vetor2[i] = entrada;
         qtdVet2++;
         }
 }
@@ -41,7 +43,8 @@ main(){
     int n;
     cout<<"Informe o tamanho do vetor "<<endl;
     cin>>n;
+    int vetorA[n], vetorB[n];
     cout<<""<<endl;
-    Exercicio1(n);
+    Exercicio1(n, vetorA, vetorB);
 
 }
